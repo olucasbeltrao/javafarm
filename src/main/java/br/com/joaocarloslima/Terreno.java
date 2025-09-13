@@ -21,7 +21,21 @@ public class Terreno {
 
 
     public void colher (Celeiro celeiro){
+        if(batata != null && batata.podeColher() == true){
+            batata = null;
+        } else if (cenoura != null && cenoura.podeColher() == true) {
+            cenoura = null;
+        } else if (morango != null && morango.podeColher() == true) {
+            morango = null;
+        }
+    }
 
+    public boolean estaOcupado(){
+        boolean verificacao = false;
+        if (batata != null || cenoura != null || morango != null) {
+            verificacao = true;
+        }
+        return verificacao;
     }
 
     public Terreno(int x, int y) {
