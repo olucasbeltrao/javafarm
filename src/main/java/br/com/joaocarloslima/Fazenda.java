@@ -17,6 +17,15 @@ public class Fazenda {
         }
     }
     public int plantarBatata(int x, int y){
+        if (celeiro.getQtdeBatatas() > 0){
+            for (x = 1;x <= 13;x++){
+                if (terrenos.get(x) != null && terrenos.get(y) != null){
+
+                }
+
+            }
+        }
+
     if (celeiro.getQtdeBatatas() > 0)
     }
     public int plantarCenoura(int x, int y){
@@ -35,7 +44,7 @@ public class Fazenda {
     }
 
     public Celeiro getCeleiro() {
-        return Celeiro;
+        return celeiro;
     }
 }
 
